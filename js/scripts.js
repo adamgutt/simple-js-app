@@ -15,3 +15,9 @@ let pokemonList = [
     types: ['bug','poison']
   }
 ];
+
+for (let i = 0; i < 3; i++){
+  document.write('<li>')
+  document.write(pokemonList[i].name + " (height: "+ pokemonList[i].height + ") ");
+  document.write("</li>")
+}
