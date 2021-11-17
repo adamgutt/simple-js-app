@@ -1,0 +1,16 @@
+body{
+  font-size: 25px;
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.page-header {
+  padding-top: 35px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
