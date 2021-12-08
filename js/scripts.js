@@ -16,15 +16,6 @@ let pokemonList = [
   }
 ];
 
-// for (let i = 0; i < 3; i++){
-//   document.write('<li>')
-//   document.write(pokemonList[i].name + " (height: "+ pokemonList[i].height + ") ");
-//   if (pokemonList[i].height > 1.5){
-//     document.write(" - Wow, that's big!");
-//   }
-//   document.write("</li>")
-// }
-
 pokemonList.forEach(function(user){
   document.write('<li>')
   document.write(user.name + " (height: "+ user.height + ") ");
