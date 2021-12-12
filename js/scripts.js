@@ -36,12 +36,12 @@ let pokemonRepository = (function () {
 
 
 
-pokemonRepository.getAll().forEach(function(user){
-  document.write('<li>')
-  document.write(user.name + " (height: "+ user.height + ") ");
-  if (user.height > 1.5){
-    document.write(" - Wow, that's big!");
-  }
+pokemonRepository.getAll().forEach(function(pokemon){
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('each-poke');
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
 });
-
-document.write(pokemonRepository.getAll());
