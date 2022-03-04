@@ -35,16 +35,17 @@ body{
 }
 
 .button-class {
-    background-color: orange;
-    cursor: pointer;
-    margin: 3px;
-    padding: 10px;
+  background-color: orange;
+  cursor: pointer;
+  margin: 3px;
+  padding: 10px;
+  min-width: 250px;
 }
 
 .pokedex-heading {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -54,6 +55,7 @@ body{
     justify-content: left;
     align-items: center;
     text-align: left;
+    flex-wrap: wrap;
     list-style: none;
     list-style-position: inside;
 }
