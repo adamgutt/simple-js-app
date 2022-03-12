@@ -11,8 +11,21 @@
 
   <body>
 
-
-  <header class = "page-header">
+    <header>
+      <nav class = "navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" class="d-inline-block align-top" alt="Pokédex logo, reduced pokeball" >
+          Pokedex App
+        </a>
+        <div class="collapse navbar-collapse" id="searchBox">
+          <ul class="navbar-nav mr-auto"></ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" onfocus=this.value='' type="text" placeholder="Search Pokemon" aria-label="Search Pokemon" onkeyup="pokemonRepository.findPokemon(this.value)">
+            </form>
+        </div>
+      </nav>
+    </header>
+  <!-- <header class = "page-header">
     <div class= "logo">
     <img src="img/logo.svg" alt="logo" class="page-header__item">
   </div>
@@ -22,7 +35,7 @@
 
   <ul class='pokemon-list'></ul>
 
-  <div id = 'modal-container' </div>
+  <div id = 'modal-container' </div> -->
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
