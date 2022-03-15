@@ -55,6 +55,10 @@ let pokemonRepository = (function () {
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.types = details.types;
+      item.abilities = [];
+      for (let i = 0; i < details.abilities.length; i++) {
+        item.abilities.push(details.abilities[i].ability.name);
+      }
     }).catch(function (e) {
       console.error(e);
     });
