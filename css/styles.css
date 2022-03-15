@@ -1,141 +1,79 @@
-body{
-  font-size: 25px;
-  list-style-type: none;
-  padding-left: 15px;
+:root {
+  --background-color: #ffffff;
+  --primary-color: #353535;
+  --highlight-color: #3c6e71;
+  --warning-color: #9a031e;
+  --primary-font: 'Dongle', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+  --font-size-body: 32px;
+  --font-size-h1: 40px;
 }
-.page-header {
-  padding-top: 35px;
-  display: flex;
-  width: 100%;
+
+body {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-body);
+
+  /* Sets the line-height to 1.6 */
+  line-height: 1.6;
+}
+
+main {
+  margin-top: 120px;
+}
+
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+.navbar-brand {
+  font-size: var(--font-size-h1);
+}
+
+.navbar-brand img {
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+
+.modal-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+}
+
+.close {
+  font-size: var(--font-size-h1);
+}
+
+/* Loading animation styling */
+#loading-container {
+  display: none;
+}
+
+#loading-container.is-visible {
+  position: fixed;
   padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-.page-header__item {
-  flex: 0 1 200px;
-}
-.logo {
-  padding-right: 250px;
-}
-.each-poke {
-  background-color: #4caf50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* to show it above other content */
+  z-index: 999;
+
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto;
+
+  /* this is used to center the modal */
+  display: grid;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #4caf50;
-}
-
-.button-class {
-  background-color: orange;
-  cursor: pointer;
-  margin: 3px;
-  padding: 10px;
-  min-width: 250px;
-}
-
-.pokedex-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.pokemon-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    text-align: left;
-    flex-wrap: wrap;
-    list-style: none;
-    list-style-position: inside;
-}
-
-#modal-container {
-    position: fixed;
-    padding: 80px;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-
-    /* show the modal above other content */
-    z-index: 999;
-
-    /* allow scrolling if the screen is not high enough */
-    overflow: auto;
-
-    /* center the modal */
-    display: grid;
-    text-align: center;
-}
-
-.modal {
-    margin: auto;
-    display: inline-block;
-    box-sizing: border-box;
-    background: #fff;
-    padding: 15px;
-    width: 100%;
-    max-width: 700px;
-    text-align: left;
-}
-
-.modal-close {
-    float: right;
-    -webkit-appearance: none;
-    border: 0;
-    background: none;
-    color: #777;
-    text-decoration: underline;
-}
-
-.modal h1 {
-    margin-top: 0;
-    text-align: center;
-}
-
-.modal p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#modal-container {
-    display: none;
-}
-
-#modal-container.is-visible {
-    /* CSS for modal container - add your own desired CSS styles here */
-    display: block;
-}
-
-/* display center-aligned pokemon image in modal */
-.image-class {
-    background-color: var(--image-background-color);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgray;
-}
-#search-pokemon {
-  text-align: center;
-  padding: 20px 5px;
-  border-radius: 10px;
-  border: rgb(102, 101, 101) solid;
-}
-#search-pokemon {
-  padding: 10px 0px;
-  font-size: 15px;
-  border-radius: 7px;
 }
