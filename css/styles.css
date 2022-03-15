@@ -3,7 +3,6 @@
   --primary-color: #353535;
   --highlight-color: #3c6e71;
   --warning-color: #9a031e;
-  --primary-font: 'Dongle', sans-serif;
   --font-weight-light: 300;
   --font-weight-bold: 700;
   --font-size-body: 32px;
@@ -11,11 +10,11 @@
 }
 
 body {
-  color: var(--primary-color);
+  color: green;
   background-color: var(--background-color);
-  font-family: var(--primary-font);
+  font-family: 'Kalam';
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-body);
+  font-size: 40px;
 
   /* Sets the line-height to 1.6 */
   line-height: 1.6;
@@ -55,19 +54,6 @@ h1 {
   font-size: var(--font-size-h1);
 }
 
-/* Loading animation styling */
-#loading-container {
-  display: none;
-}
-
-#loading-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 
   /* to show it above other content */
   z-index: 999;
