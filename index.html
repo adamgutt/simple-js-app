@@ -10,17 +10,21 @@
   </head>
 
   <body>
-    <header class="page-header">
-         <nav class="navbar">
-           <a class="navbar-brand" href="index.html">
-             <img src="img/logo.svg" width="50" height="50" class="d-inline-block align-top" alt="" />
-           </a>
+    <header>
+      <!-- Bootstrap navbar -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" class="d-inline-block align-top" alt="Pokédex logo, reduced pokeball" >
+        </a>
          <!-- Search Form within Navigation Bar -->
-          <form class="form-inline">
-      <input class="form-control" id="myInput" type="search" placeholder="Search for Pokemon..." aria-label="Search"/>
-         </form>
-         </nav>
-   </header>
+         <div class="collapse navbar-collapse" id="searchBox">
+           <ul class="navbar-nav mr-auto"></ul>
+           <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" onfocus=this.value='' type="text" placeholder="Search Pokemon" aria-label="Search Pokemon" onkeyup="pokemonRepository.findPokemon(this.value)">
+           </form>
+         </div>
+       </nav>
+     </header>
 
 
    <!-- Modal -->
