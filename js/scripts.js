@@ -145,9 +145,15 @@ let pokemonRepository = (function () {
     loadList: loadList,
     loadDetails: loadDetails,
     showDetails: showDetails,
-    showModal: showModal
+    showModal: showModal,
+    findPokemon: findPokemon
   };
 })();
+
+let search = document.querySelector('#search');
+search.addEventListener('keyup', function(event){
+  pokemonRepository.findPokemon(event.target.value);
+});
 
 
 pokemonRepository.loadList().then(function () {
