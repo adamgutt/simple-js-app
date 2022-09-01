@@ -14,3 +14,6 @@ Here is my hosted website https://adamgutt.github.io/simple-js-app
 - Bootstrap
 - ESLint
 - Prettier
+
+## Cloning Repository
+https://github.com/adamgutt/simple-js-app.git
